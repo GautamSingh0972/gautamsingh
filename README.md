@@ -1,2 +1,2 @@
-# GautamSingh0972.github.io
+# https://gautamsingh0972.github.io/gautamsingh/
 personal profile page
