@@ -1,143 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Planet Money: Student Loans & Tuition</title>
+<title>Planet Money: Student Loans & Tuition | Gautam Singh</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#f5f7fa;
-    color:#222;
-    line-height:1.8;
+
+font-family:'Inter',sans-serif;
+background:#f4f6fa;
+color:#222;
+line-height:1.8;
+
 }
 
 header{
-    background:linear-gradient(135deg,#1e3c72,#2a5298);
-    color:white;
-    padding:80px 20px;
-    text-align:center;
+
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+padding:90px 20px;
+text-align:center;
+
 }
 
 header h1{
-    font-size:2.8rem;
-    margin-bottom:15px;
+
+font-size:3rem;
+margin-bottom:15px;
+
 }
 
-header p{
-    font-size:1.1rem;
-    opacity:0.9;
+.subtitle{
+
+font-size:1.15rem;
+opacity:.9;
+
+}
+
+.meta{
+
+margin-top:25px;
+font-size:.95rem;
+opacity:.8;
+
 }
 
 .container{
-    width:90%;
-    max-width:900px;
-    margin:50px auto;
-    background:white;
-    padding:50px;
-    border-radius:12px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+
+max-width:900px;
+margin:50px auto;
+background:white;
+padding:55px;
+border-radius:14px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
 }
 
 .toc{
-    background:#eef4ff;
-    border-left:5px solid #2a5298;
-    padding:20px;
-    margin-bottom:40px;
+
+background:#eef5ff;
+padding:25px;
+border-left:5px solid #2563eb;
+margin-bottom:45px;
+
 }
 
 .toc h3{
-    margin-bottom:10px;
+
+margin-bottom:15px;
+
 }
 
 .toc ul{
-    padding-left:20px;
+
+padding-left:20px;
+
 }
 
 .toc li{
-    margin:8px 0;
+
+margin:8px 0;
+
 }
 
 h2{
-    color:#1e3c72;
-    margin-top:45px;
-    margin-bottom:15px;
-}
 
-h3{
-    margin-top:30px;
-    color:#333;
+color:#1d4ed8;
+margin-top:45px;
+margin-bottom:18px;
+
 }
 
 p{
-    margin:18px 0;
+
+margin:18px 0;
+
 }
 
 ul{
-    margin-left:25px;
-    margin-bottom:25px;
+
+margin:20px 0 30px 25px;
+
 }
 
 blockquote{
-    background:#f2f7ff;
-    border-left:6px solid #2a5298;
-    padding:18px;
-    margin:30px 0;
-    font-style:italic;
+
+background:#f8fbff;
+border-left:6px solid #2563eb;
+padding:22px;
+margin:35px 0;
+font-size:1.05rem;
+font-style:italic;
+
+}
+
+.callout{
+
+background:#fef3c7;
+padding:20px;
+border-radius:8px;
+margin:35px 0;
+border-left:6px solid #f59e0b;
+
 }
 
 table{
-    width:100%;
-    border-collapse:collapse;
-    margin:30px 0;
+
+width:100%;
+border-collapse:collapse;
+margin:30px 0;
+
 }
 
 table th{
-    background:#2a5298;
-    color:white;
+
+background:#2563eb;
+color:white;
+
 }
 
-table th,
-table td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:left;
+table td,
+table th{
+
+padding:14px;
+border:1px solid #ddd;
+
+}
+
+hr{
+
+margin:55px 0;
+border:none;
+height:1px;
+background:#ddd;
+
 }
 
 footer{
-    text-align:center;
-    margin:60px 0;
-    color:#666;
+
+text-align:center;
+padding:50px;
+color:#666;
+
 }
 
 a{
-    color:#2a5298;
-    text-decoration:none;
+
+color:#2563eb;
+text-decoration:none;
+
 }
 
 a:hover{
-    text-decoration:underline;
+
+text-decoration:underline;
+
 }
 
 @media(max-width:768px){
 
 .container{
-padding:25px;
+
+padding:30px;
+
 }
 
 header h1{
-font-size:2rem;
+
+font-size:2.2rem;
+
 }
 
 }
@@ -145,15 +209,22 @@ font-size:2rem;
 </style>
 
 </head>
+
 <body>
 
 <header>
 
 <h1>Will Universities Actually Cut Prices?</h1>
 
-<p>
-Why new federal loan caps are more likely to reduce enrolment than reduce tuition.
+<p class="subtitle">
+How new federal loan caps could reshape higher education without making it cheaper.
 </p>
+
+<div class="meta">
+
+By <strong>Gautam Singh</strong> • Education Policy • 6 min read
+
+</div>
 
 </header>
 
@@ -165,187 +236,103 @@ Why new federal loan caps are more likely to reduce enrolment than reduce tuitio
 
 <ul>
 
-<li><a href="#prices">Will tuition actually fall?</a></li>
+<li><a href="#overview">Overview</a></li>
 
-<li><a href="#students">Impact on students</a></li>
+<li><a href="#bennett">The Bennett Hypothesis</a></li>
 
-<li><a href="#timeline">When could prices change?</a></li>
+<li><a href="#first">What Happens First?</a></li>
 
-<li><a href="#graduate">Graduate education</a></li>
+<li><a href="#private">The Private Loan Squeeze</a></li>
 
-<li><a href="#publicservice">Public-service careers</a></li>
+<li><a href="#graduate">Graduate School Under Pressure</a></li>
 
-<li><a href="#private">Private student loans</a></li>
+<li><a href="#timeline">Why Change Will Be Slow</a></li>
+
+<li><a href="#takeaway">Key Takeaways</a></li>
 
 </ul>
 
 </div>
 
-<section id="prices">
+<section id="overview">
 
-<h2>Will Universities Actually Cut Prices?</h2>
+<h2>Overview</h2>
+
+<p>
+
+For decades, American universities operated under one assumption: as long as students could continue borrowing, tuition could continue rising.
+
+</p>
+
+<p>
+
+Now, with tighter federal borrowing limits, many expect universities to finally reduce tuition. Unfortunately, economics—and university incentives—suggest something very different.
+
+</p>
 
 <blockquote>
 
-The most likely outcome is not immediate tuition reductions—it is lower enrolment, greater reliance on private lending, and gradual institutional adaptation.
-
-</blockquote>
-
-<p>
-
-Many policymakers believe restricting federal student loans will eventually force universities to lower tuition. This idea is commonly known as the <strong>Bennett Hypothesis</strong>. While the theory is economically plausible, universities rarely respond quickly to financial pressure.
-
-</p>
-
-<p>
-
-Instead of reducing tuition immediately, institutions are more likely to:
-
-</p>
-
-<ul>
-
-<li>Protect revenue by keeping published tuition unchanged.</li>
-
-<li>Expand institutional scholarships for selected students.</li>
-
-<li>Delay any significant pricing reforms for several years.</li>
-
-</ul>
-
-</section>
-
-<section id="students">
-
-<h2>What Happens to Students?</h2>
-
-<p>
-
-The biggest impact will be felt by students whose programmes cost substantially more than the new borrowing limits.
-
-</p>
-
-<ul>
-
-<li>Students from lower-income households may postpone or abandon expensive programmes.</li>
-
-<li>Many applicants will choose cheaper public universities or community colleges.</li>
-
-<li>Graduate students will increasingly depend on private lenders.</li>
-
-<li>Some students will reduce their course load or temporarily leave university.</li>
-
-</ul>
-
-</section>
-
-<section id="timeline">
-
-<h2>When Will Tuition Begin Falling?</h2>
-
-<p>
-
-If tuition does decline, it is unlikely to happen immediately.
-
-</p>
-
-<table>
-
-<tr>
-
-<th>Period</th>
-
-<th>Expected University Response</th>
-
-</tr>
-
-<tr>
-
-<td>Year 1</td>
-
-<td>Use financial reserves, freeze hiring, maintain tuition.</td>
-
-</tr>
-
-<tr>
-
-<td>Years 2–3</td>
-
-<td>Recruit wealthier and international students instead of lowering prices.</td>
-
-</tr>
-
-<tr>
-
-<td>Years 4+</td>
-
-<td>Increase scholarships before officially reducing tuition.</td>
-
-</tr>
-
-</table>
-
-</section>
-
-<section id="graduate">
-
-<h2>Graduate Education Faces the Greatest Challenge</h2>
-
-<p>
-
-Graduate borrowing limits create funding gaps that exceed the cost of many master's programmes.
-
-</p>
-
-<ul>
-
-<li>Medicine and law retain higher borrowing limits.</li>
-
-<li>Many master's programmes exceed the standard annual cap.</li>
-
-<li>Living costs remain largely uncovered.</li>
-
-</ul>
-
-<blockquote>
-
-Universities are more likely to hide price reductions through larger scholarships than advertise lower tuition.
+The first consequence of loan caps is likely to be lower enrolment rather than lower tuition.
 
 </blockquote>
 
 </section>
 
-<section id="publicservice">
+<section id="bennett">
 
-<h2>The Risk for Public-Service Professions</h2>
+<h2>The Bennett Hypothesis</h2>
 
 <p>
 
-Fields such as education, nursing, counselling and social work often have high training costs but relatively modest salaries.
+The policy behind federal loan caps is based on the Bennett Hypothesis, which argues that unrestricted student lending encourages universities to raise tuition because students have greater access to borrowed money.
+
+</p>
+
+<p>
+
+Even if the theory is correct, universities rarely react immediately. Tuition influences both revenue and institutional prestige, making visible price reductions politically and financially unattractive.
+
+</p>
+
+</section>
+
+<section id="first">
+
+<h2>What Happens First?</h2>
+
+<p>
+
+Instead of cutting tuition, universities are expected to protect their published prices while adapting in other ways.
 
 </p>
 
 <ul>
 
-<li>Greater financial barriers for future teachers.</li>
+<li>Increase institutional scholarships.</li>
 
-<li>Reduced access to graduate nursing education.</li>
+<li>Recruit wealthier domestic students.</li>
 
-<li>Lower enrolment in social work and mental health programmes.</li>
+<li>Expand international enrolment.</li>
 
-<li>Potential long-term shortages in essential public services.</li>
+<li>Wait to see whether enrolment declines become permanent.</li>
 
 </ul>
+
+<div class="callout">
+
+<strong>Key Insight:</strong> Universities generally prefer hidden discounts through scholarships rather than publicly lowering tuition.
+
+</div>
 
 </section>
 
 <section id="private">
 
-<h2>The Shift Toward Private Lending</h2>
+<h2>The Private Loan Squeeze</h2>
 
 <p>
 
-Private lenders are expected to absorb much of the funding gap left by reduced federal borrowing.
+As federal borrowing becomes more restrictive, private lenders will fill much of the funding gap.
 
 </p>
 
@@ -361,9 +348,9 @@ Private lenders are expected to absorb much of the funding gap left by reduced f
 
 <tr>
 
-<td>Fixed interest rates</td>
+<td>Government-backed</td>
 
-<td>Credit-dependent rates</td>
+<td>Commercial lenders</td>
 
 </tr>
 
@@ -377,17 +364,17 @@ Private lenders are expected to absorb much of the funding gap left by reduced f
 
 <tr>
 
-<td>Federal protections</td>
+<td>Broader eligibility</td>
 
-<td>Limited hardship options</td>
+<td>Requires strong credit or co-signer</td>
 
 </tr>
 
 <tr>
 
-<td>No co-signer for many borrowers</td>
+<td>Federal protections</td>
 
-<td>Often requires strong credit or co-signer</td>
+<td>Limited borrower protections</td>
 
 </tr>
 
@@ -395,19 +382,123 @@ Private lenders are expected to absorb much of the funding gap left by reduced f
 
 <p>
 
-This shift could make graduate education increasingly dependent on family wealth and credit history rather than academic ability.
+While funding remains available, access increasingly depends on family wealth and creditworthiness rather than academic merit.
 
 </p>
 
 </section>
 
-<hr style="margin:50px 0;">
+<section id="graduate">
+
+<h2>Graduate School Under Pressure</h2>
+
+<p>
+
+Graduate education faces the greatest financial challenge under the new borrowing limits.
+
+</p>
+
+<ul>
+
+<li>Many master's programmes cost well above annual federal borrowing limits.</li>
+
+<li>Living expenses remain largely uncovered.</li>
+
+<li>Teaching, nursing, and social work become especially vulnerable.</li>
+
+<li>Lower-income students face growing barriers to advanced education.</li>
+
+</ul>
+
+<blockquote>
+
+Graduate education risks becoming increasingly accessible only to students who already possess financial advantages.
+
+</blockquote>
+
+</section>
+
+<section id="timeline">
+
+<h2>Why Change Will Be Slow</h2>
+
+<p>
+
+Universities cannot rapidly reduce costs due to long-term contracts, infrastructure expenses, and institutional debt.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Timeline</th>
+
+<th>Likely Response</th>
+
+</tr>
+
+<tr>
+
+<td>Year 1</td>
+
+<td>Absorb financial shock using reserves and hiring freezes.</td>
+
+</tr>
+
+<tr>
+
+<td>Years 2–3</td>
+
+<td>Monitor enrolment and recruit higher-paying students.</td>
+
+</tr>
+
+<tr>
+
+<td>Years 4+</td>
+
+<td>Increase tuition discounting before considering published price cuts.</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section id="takeaway">
+
+<h2>Key Takeaways</h2>
+
+<p>
+
+The immediate consequence of tighter borrowing limits is unlikely to be cheaper universities. Instead, institutions are expected to preserve tuition levels while shifting financial pressure onto students.
+
+</p>
+
+<ul>
+
+<li>Tuition will likely remain high.</li>
+
+<li>Private borrowing will become more common.</li>
+
+<li>Graduate education may become less accessible.</li>
+
+<li>Public-service professions could face worsening labour shortages.</li>
+
+<li>Any meaningful tuition correction is likely to take years.</li>
+
+</ul>
+
+</section>
+
+<hr>
 
 <h2>Final Thoughts</h2>
 
 <p>
 
-The evidence suggests that new borrowing limits are unlikely to trigger rapid tuition reductions. Instead, universities will first attempt to protect revenue through financial aid adjustments, recruitment strategies, and institutional cost controls. Students—particularly those from lower-income households—are likely to experience the immediate effects through increased reliance on private lending, delayed education, or reduced access to expensive graduate programmes.
+Federal loan caps may eventually create pressure for universities to rethink pricing, but institutional change is slow. Before tuition falls, students are likely to experience reduced access, greater reliance on private finance, and widening inequality in graduate education. The market may adjust—but not before many prospective students bear the cost.
 
 </p>
 
@@ -415,9 +506,10 @@ The evidence suggests that new borrowing limits are unlikely to trigger rapid tu
 
 <footer>
 
-<p>© 2026 • Your Name</p>
+<p>© 2026 Gautam Singh • Economics & Public Policy Blog</p>
 
 </footer>
 
 </body>
+
 </html>
