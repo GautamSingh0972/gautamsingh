@@ -1,515 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Planet Money: Student Loans & Tuition | Gautam Singh</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<title>Priced Out: Will Loan Caps Actually Make University Cheaper?</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-
-font-family:'Inter',sans-serif;
-background:#f4f6fa;
-color:#222;
-line-height:1.8;
-
-}
-
-header{
-
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:white;
-padding:90px 20px;
-text-align:center;
-
-}
-
-header h1{
-
-font-size:3rem;
-margin-bottom:15px;
-
-}
-
-.subtitle{
-
-font-size:1.15rem;
-opacity:.9;
-
-}
-
-.meta{
-
-margin-top:25px;
-font-size:.95rem;
-opacity:.8;
-
-}
-
-.container{
-
-max-width:900px;
-margin:50px auto;
-background:white;
-padding:55px;
-border-radius:14px;
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-}
-
-.toc{
-
-background:#eef5ff;
-padding:25px;
-border-left:5px solid #2563eb;
-margin-bottom:45px;
-
-}
-
-.toc h3{
-
-margin-bottom:15px;
-
-}
-
-.toc ul{
-
-padding-left:20px;
-
-}
-
-.toc li{
-
-margin:8px 0;
-
-}
-
-h2{
-
-color:#1d4ed8;
-margin-top:45px;
-margin-bottom:18px;
-
-}
-
-p{
-
-margin:18px 0;
-
-}
-
-ul{
-
-margin:20px 0 30px 25px;
-
-}
-
-blockquote{
-
-background:#f8fbff;
-border-left:6px solid #2563eb;
-padding:22px;
-margin:35px 0;
-font-size:1.05rem;
-font-style:italic;
-
-}
-
-.callout{
-
-background:#fef3c7;
-padding:20px;
-border-radius:8px;
-margin:35px 0;
-border-left:6px solid #f59e0b;
-
-}
-
-table{
-
-width:100%;
-border-collapse:collapse;
-margin:30px 0;
-
-}
-
-table th{
-
-background:#2563eb;
-color:white;
-
-}
-
-table td,
-table th{
-
-padding:14px;
-border:1px solid #ddd;
-
-}
-
-hr{
-
-margin:55px 0;
-border:none;
-height:1px;
-background:#ddd;
-
-}
-
-footer{
-
-text-align:center;
-padding:50px;
-color:#666;
-
-}
-
-a{
-
-color:#2563eb;
-text-decoration:none;
-
-}
-
-a:hover{
-
-text-decoration:underline;
-
-}
-
-@media(max-width:768px){
-
-.container{
-
-padding:30px;
-
-}
-
-header h1{
-
-font-size:2.2rem;
-
-}
-
-}
-
+  :root {
+    --blue: #0F58BD;
+    --navy: #1F3864;
+    --grey: #666666;
+    --shade: #EEF3FA;
+    --ink: #1a1a1a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Calibri, "Segoe UI", -apple-system, Arial, sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+    margin: 0;
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 72px;
+  }
+  .title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  .byline {
+    color: var(--grey);
+    font-style: italic;
+    margin: 8px 0 28px;
+  }
+  h1 {
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 40px 0 12px;
+    line-height: 1.25;
+  }
+  h2 {
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 28px 0 10px;
+  }
+  p { margin: 0 0 16px; }
+  .lede { font-weight: 700; }
+  ul { margin: 0 0 16px; padding-left: 28px; }
+  li { margin: 8px 0; }
+  li b { font-weight: 700; }
+  .key-terms {
+    margin-top: 56px;
+    border-top: 2px solid var(--navy);
+    padding-top: 20px;
+  }
+  .key-terms .kt-header {
+    background: var(--shade);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+  }
+  .key-terms p {
+    margin: 0 0 14px;
+    padding-left: 18px;
+  }
+  .key-terms .term { font-weight: 400; }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.45rem; }
+    h2 { font-size: 1.2rem; }
+  }
 </style>
-
 </head>
-
 <body>
+<div class="page">
 
-<header>
+  <p class="title">Priced Out:</p>
+  <p class="title">Will Loan Caps Actually Make University Cheaper?</p>
+  <p class="byline">By Gautam Singh &nbsp;&middot;&nbsp; Economics Blog &nbsp;&middot;&nbsp; Based on notes about federal loan caps and higher education pricing</p>
 
-<h1>Will Universities Actually Cut Prices?</h1>
+  <p>For decades, American universities have operated on a simple assumption: as long as students can borrow enough, they can keep paying rising tuition. The federal government was, in effect, an unlimited lender of first resort, and sticker prices climbed year after year with no obvious ceiling. That assumption has now been broken. Under the Trump administration's 2025 budget law, federal borrowing for graduate and professional study is capped for the first time in a generation, and the big question is whether universities will finally lower prices or simply force students to find another way to pay.</p>
 
-<p class="subtitle">
-How new federal loan caps could reshape higher education without making it cheaper.
-</p>
+  <p class="lede">This blog unveils the questions the loan-cap debate usually skips over: what the caps actually say, why tuition is unlikely to fall quickly, and who ends up absorbing the shock in the meantime.</p>
 
-<div class="meta">
+  <h1>First, what do the new caps actually say?</h1>
+  <p>To understand the fight over university pricing, we first need to define what has changed. The old system had a crucial escape valve: Grad PLUS loans, which let graduate students borrow from the federal government all the way up to the full cost of attendance, living expenses included. Whatever a programme charged, the government would finance.</p>
+  <p>The new rules abolish Grad PLUS entirely and replace it with hard limits. Ordinary graduate students are capped at roughly $20,500 a year and around $100,000 in total. Professional degrees such as law and medicine get a higher ceiling, about $50,000 a year and $200,000 lifetime, and parents borrowing on behalf of their children face new caps of their own.</p>
+  <p>The main problem is the gap between those numbers and reality. Many law, medical and business programmes cost well over $70,000 a year once living costs are included. For the first time, the price of a degree and the amount the government will lend for it no longer line up, and something has to give.</p>
 
-By <strong>Gautam Singh</strong> • Education Policy • 6 min read
+  <h1>The theory behind the policy: the Bennett Hypothesis</h1>
+  <p>The caps rest on an old idea called the Bennett Hypothesis, named after a 1980s US education secretary who argued that generous federal loans do not make college affordable at all; they simply allow universities to raise prices. The logic runs as a chain:</p>
+  <ul>
+    <li><b>Easy credit expands demand</b> &ndash; if every applicant can borrow the full cost of attendance, price stops being a constraint on how many students apply, so universities face little pressure to compete on price.</li>
+    <li><b>Universities capture the subsidy</b> &ndash; knowing the loans will stretch to cover any tuition figure, institutions can raise sticker prices and absorb the extra federal money into salaries, facilities and administration.</li>
+    <li><b>Debt replaces discipline</b> &ndash; the cost of the arms race lands on graduates as debt rather than on universities as lost enrolment, so the cycle repeats every year.</li>
+  </ul>
+  <p>Cap the loans, the theory goes, and you cut the chain: universities that can no longer count on unlimited federal money will be forced to compete on price. It is a tidy argument. The trouble is that even if the theory is broadly right, the effect will not show up overnight, because universities do not behave like ordinary price-taking firms.</p>
 
-</div>
+  <h1>The sticker-price problem</h1>
+  <h2>Why won't universities simply cut tuition?</h2>
+  <p>Prestige is the first culprit. In higher education, price doubles as a signal of quality: a university that visibly slashes tuition risks looking like a discount brand, and rankings, donors and applicants all respond to that signal. Institutions would rather keep the headline price high and quietly hand out bigger scholarships, a practice known as tuition discounting, than announce a cut.</p>
+  <p>The deeper issue is structural. Universities build budgets years in advance and carry heavy fixed costs: tenured staff, debt-financed buildings, sports programmes and layers of administration. None of that can be trimmed quickly just because a loan rule changed in Washington. Faced with a revenue shock, the rational short-term move is to protect the sticker price, absorb losses through reserves and hiring freezes, and wait to see how bad the damage really is.</p>
 
-</header>
+  <h2>So what happens first?</h2>
+  <p>The first visible result is likely to be a drop in enrolment, not a drop in tuition. Students eyeing expensive programmes, particularly in nursing, law, social work and other graduate fields where the cap no longer covers the real cost, may simply not apply. That leaves prospective students with three broad options: take private loans, trade down to cheaper public universities, community colleges or online degrees, or scale back their plans and enter the workforce sooner.</p>
 
-<div class="container">
+  <h1>The five-year adjustment: how the squeeze unfolds</h1>
+  <p>Even if tuition pressure does eventually build, it will probably take three to five years before universities feel it clearly. The likely sequence looks something like this:</p>
+  <ul>
+    <li><b>Year one: absorb the shock</b> &ndash; universities cover the gap with reserves, hiring freezes and bigger internal grant pools, treating the enrolment dip as temporary turbulence.</li>
+    <li><b>Years two and three: wait and see</b> &ndash; institutions test whether lost students can be replaced with wealthier domestic applicants, international students paying full fare, or private borrowers.</li>
+    <li><b>Hidden discounting spreads</b> &ndash; rather than cut the published price, schools expand scholarships and negotiate individual packages, so the effective price falls while the sticker price survives.</li>
+    <li><b>Programme triage begins</b> &ndash; persistently under-enrolled degrees, often the expensive but lower-paid ones, get shrunk or closed rather than repriced.</li>
+    <li><b>Only then, visible cuts</b> &ndash; if none of the above refills seats, a handful of institutions break ranks and cut tuition publicly, forcing rivals to respond.</li>
+  </ul>
 
-<div class="toc">
+  <h1>A second lender? The private-loan opening</h1>
+  <p>However, the very gap the government has created is an opportunity for someone else. Private lenders are ready to step in and finance the difference between the federal cap and the real cost of a degree, and for banks this is an attractive, fast-growing market.</p>
+  <p>But a private market does not work for everyone. Private loans usually require strong credit or a creditworthy co-signer, carry higher rates, and offer none of the income-driven repayment or forgiveness protections attached to federal debt. Students from wealthier families can bridge the gap easily; students without family backing may be forced to delay, downgrade or abandon their degrees altogether. The result is not just a financing problem but a class filter on who gets to continue past a bachelor's degree.</p>
 
-<h3>Contents</h3>
+  <h1>The uncomfortable access question</h1>
+  <p>Even if the caps eventually discipline prices, can the students they squeeze out afford to wait? Mostly, no.</p>
+  <p>The pressure lands hardest on socially important but lower-paid fields. Social work, teaching and nursing degrees can be expensive to deliver, yet the careers they lead to rarely offer the salaries that justify private borrowing at commercial rates. The students most likely to staff schools, hospitals and public services are precisely the ones least able to pass a co-signer check, and lenders have little incentive to serve them.</p>
+  <p>That points to the likeliest medium-term outcome: a shift in who can afford advanced study rather than a sudden collapse in tuition. The official price stays high, the composition of the student body quietly changes, and access narrows behind the scenes while the headline numbers barely move.</p>
 
-<ul>
+  <h1>Are universities actually doing anything?</h1>
+  <p>So far, the response has been defensive rather than transformative. Institutions are enlarging institutional aid budgets so that the net price for targeted students falls even as sticker prices hold, courting international and part-time students to plug revenue holes, and lobbying for the caps to be softened or delayed. A few are experimenting with cheaper delivery, including accelerated degrees, hybrid online programmes and credit for prior learning, which lower cost per student without touching the flagship price.</p>
+  <p>What almost none are doing is the thing the policy was designed to force: publicly cutting tuition. Until enrolment losses prove permanent and un-pluggable, the incentive to move first remains weak, because the first mover takes the prestige hit while everyone else keeps the revenue.</p>
 
-<li><a href="#overview">Overview</a></li>
+  <h1>The takeaway</h1>
+  <p>Loan caps may not make university cheaper any time soon. What they are more likely to do in the short run is reshape enrolment, push students toward private lending, and widen the gap between those who can finance graduate study and those who cannot. The Bennett Hypothesis may well be vindicated eventually, but the adjustment will run through years of shrinking cohorts, hidden discounts and closed programmes before it ever shows up on a published price list. In other words, universities may not cut prices right away; they may simply teach fewer students for a while and wait for the market to adjust around them.</p>
 
-<li><a href="#bennett">The Bennett Hypothesis</a></li>
-
-<li><a href="#first">What Happens First?</a></li>
-
-<li><a href="#private">The Private Loan Squeeze</a></li>
-
-<li><a href="#graduate">Graduate School Under Pressure</a></li>
-
-<li><a href="#timeline">Why Change Will Be Slow</a></li>
-
-<li><a href="#takeaway">Key Takeaways</a></li>
-
-</ul>
-
-</div>
-
-<section id="overview">
-
-<h2>Overview</h2>
-
-<p>
-
-For decades, American universities operated under one assumption: as long as students could continue borrowing, tuition could continue rising.
-
-</p>
-
-<p>
-
-Now, with tighter federal borrowing limits, many expect universities to finally reduce tuition. Unfortunately, economics—and university incentives—suggest something very different.
-
-</p>
-
-<blockquote>
-
-The first consequence of loan caps is likely to be lower enrolment rather than lower tuition.
-
-</blockquote>
-
-</section>
-
-<section id="bennett">
-
-<h2>The Bennett Hypothesis</h2>
-
-<p>
-
-The policy behind federal loan caps is based on the Bennett Hypothesis, which argues that unrestricted student lending encourages universities to raise tuition because students have greater access to borrowed money.
-
-</p>
-
-<p>
-
-Even if the theory is correct, universities rarely react immediately. Tuition influences both revenue and institutional prestige, making visible price reductions politically and financially unattractive.
-
-</p>
-
-</section>
-
-<section id="first">
-
-<h2>What Happens First?</h2>
-
-<p>
-
-Instead of cutting tuition, universities are expected to protect their published prices while adapting in other ways.
-
-</p>
-
-<ul>
-
-<li>Increase institutional scholarships.</li>
-
-<li>Recruit wealthier domestic students.</li>
-
-<li>Expand international enrolment.</li>
-
-<li>Wait to see whether enrolment declines become permanent.</li>
-
-</ul>
-
-<div class="callout">
-
-<strong>Key Insight:</strong> Universities generally prefer hidden discounts through scholarships rather than publicly lowering tuition.
+  <div class="key-terms">
+    <div class="kt-header">&nbsp;&nbsp;Key Terms</div>
+    <p><span class="term">Bennett Hypothesis</span> &mdash; the argument that generous federal student lending allows universities to raise tuition, because loans expand what students can pay and institutions capture the subsidy through higher prices.</p>
+    <p><span class="term">Grad PLUS loans</span> &mdash; the abolished federal programme that let graduate students borrow up to the full cost of attendance, including living expenses, with no fixed dollar cap.</p>
+    <p><span class="term">Sticker price</span> &mdash; the official published tuition figure before scholarships or discounts. It signals prestige as much as it measures cost, which is why universities defend it.</p>
+    <p><span class="term">Tuition discounting</span> &mdash; the practice of keeping the published price high while offering larger institutional grants, so the effective price falls without any visible cut.</p>
+    <p><span class="term">Private loan market</span> &mdash; loans from commercial lenders, typically requiring strong credit or a co-signer, carrying higher rates, and lacking the income-driven repayment protections of federal debt.</p>
+    <p><span class="term">Graduate paywall</span> &mdash; the point at which federal borrowing limits make advanced degrees affordable only to those with family wealth, savings, or access to private credit.</p>
+  </div>
 
 </div>
-
-</section>
-
-<section id="private">
-
-<h2>The Private Loan Squeeze</h2>
-
-<p>
-
-As federal borrowing becomes more restrictive, private lenders will fill much of the funding gap.
-
-</p>
-
-<table>
-
-<tr>
-
-<th>Federal Loans</th>
-
-<th>Private Loans</th>
-
-</tr>
-
-<tr>
-
-<td>Government-backed</td>
-
-<td>Commercial lenders</td>
-
-</tr>
-
-<tr>
-
-<td>Income-driven repayment</td>
-
-<td>Usually unavailable</td>
-
-</tr>
-
-<tr>
-
-<td>Broader eligibility</td>
-
-<td>Requires strong credit or co-signer</td>
-
-</tr>
-
-<tr>
-
-<td>Federal protections</td>
-
-<td>Limited borrower protections</td>
-
-</tr>
-
-</table>
-
-<p>
-
-While funding remains available, access increasingly depends on family wealth and creditworthiness rather than academic merit.
-
-</p>
-
-</section>
-
-<section id="graduate">
-
-<h2>Graduate School Under Pressure</h2>
-
-<p>
-
-Graduate education faces the greatest financial challenge under the new borrowing limits.
-
-</p>
-
-<ul>
-
-<li>Many master's programmes cost well above annual federal borrowing limits.</li>
-
-<li>Living expenses remain largely uncovered.</li>
-
-<li>Teaching, nursing, and social work become especially vulnerable.</li>
-
-<li>Lower-income students face growing barriers to advanced education.</li>
-
-</ul>
-
-<blockquote>
-
-Graduate education risks becoming increasingly accessible only to students who already possess financial advantages.
-
-</blockquote>
-
-</section>
-
-<section id="timeline">
-
-<h2>Why Change Will Be Slow</h2>
-
-<p>
-
-Universities cannot rapidly reduce costs due to long-term contracts, infrastructure expenses, and institutional debt.
-
-</p>
-
-<table>
-
-<tr>
-
-<th>Timeline</th>
-
-<th>Likely Response</th>
-
-</tr>
-
-<tr>
-
-<td>Year 1</td>
-
-<td>Absorb financial shock using reserves and hiring freezes.</td>
-
-</tr>
-
-<tr>
-
-<td>Years 2–3</td>
-
-<td>Monitor enrolment and recruit higher-paying students.</td>
-
-</tr>
-
-<tr>
-
-<td>Years 4+</td>
-
-<td>Increase tuition discounting before considering published price cuts.</td>
-
-</tr>
-
-</table>
-
-</section>
-
-<section id="takeaway">
-
-<h2>Key Takeaways</h2>
-
-<p>
-
-The immediate consequence of tighter borrowing limits is unlikely to be cheaper universities. Instead, institutions are expected to preserve tuition levels while shifting financial pressure onto students.
-
-</p>
-
-<ul>
-
-<li>Tuition will likely remain high.</li>
-
-<li>Private borrowing will become more common.</li>
-
-<li>Graduate education may become less accessible.</li>
-
-<li>Public-service professions could face worsening labour shortages.</li>
-
-<li>Any meaningful tuition correction is likely to take years.</li>
-
-</ul>
-
-</section>
-
-<hr>
-
-<h2>Final Thoughts</h2>
-
-<p>
-
-Federal loan caps may eventually create pressure for universities to rethink pricing, but institutional change is slow. Before tuition falls, students are likely to experience reduced access, greater reliance on private finance, and widening inequality in graduate education. The market may adjust—but not before many prospective students bear the cost.
-
-</p>
-
-</div>
-
-<footer>
-
-<p>© 2026 Gautam Singh • Economics & Public Policy Blog</p>
-
-</footer>
-
 </body>
-
 </html>
