@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gamble of Inflating Away Debt | Gautam Singh</title>
+  <meta name="description" content="Can the United States inflate away its national debt? An economics blog on Treasury bonds, inflation, Federal Reserve independence and economic growth.">
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #666;
+      --link: #1558a6;
+      --line: #e5e5e5;
+      --paper: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    main {
+      max-width: 790px;
+      margin: 0 auto;
+      padding: 34px 24px 72px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.15rem, 5vw, 3.15rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      margin: 0 0 14px;
+    }
+
+    .byline {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .dek {
+      font-size: 1.2rem;
+      line-height: 1.55;
+      color: #393939;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      line-height: 1.25;
+      margin: 38px 0 12px;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      font-size: 1.18rem;
+      margin: 25px 0 8px;
+    }
+
+    p {
+      margin: 0 0 17px;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin: 0 0 9px;
+    }
+
+    .note {
+      border-left: 3px solid #b8c9dc;
+      padding: 10px 0 10px 16px;
+      color: #444;
+      margin: 22px 0;
+    }
+
+    .equation {
+      background: #f6f7f8;
+      padding: 14px 18px;
+      text-align: center;
+      font-size: 1.15rem;
+      margin: 18px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .data {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 18px 0 22px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .data th,
+    .data td {
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      vertical-align: top;
+    }
+
+    .data th {
+      background: #f7f7f7;
+      font-weight: 700;
+    }
+
+    .sources {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .sources li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      margin-top: 42px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        padding: 24px 18px 52px;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <a class="back" href="index.html">← Back to home</a>
+
+  <h1>The Gamble of Inflating Away Debt: Can the US Make Its Debt Disappear?</h1>
+
+  <div class="byline">
+    By Gautam Singh · Economics Blog · Inspired by NPR’s
+    <em>Planet Money</em> coverage
+  </div>
+
+  <p class="dek">
+    When a government owes trillions of dollars, inflation can look like
+    a tempting escape route. Let prices rise, let nominal incomes and GDP
+    catch up, and yesterday’s debts become smaller in real terms.
+    But investors can see it coming and make the next round of borrowing
+    more expensive.
+  </p>
+
+  <p>
+    The idea behind inflating away debt is straightforward. If the
+    government has promised to repay a bond with fixed dollar payments,
+    unexpected inflation makes those future dollars worth less.
+    The Treasury can repay the same number of dollars, but those dollars
+    buy less than investors originally expected. Some of the cost is
+    effectively shifted from the government to bondholders.
+  </p>
+
+  <p>
+    That does not mean inflation erases the debt, or that every bond is
+    affected equally. The real question is how much debt is exposed,
+    who owns it, and what happens when investors and the Federal Reserve
+    respond.
+  </p>
+
+  <h2>1. How much debt can actually be eroded?</h2>
+
+  <p>
+    The first distinction is between conventional Treasury securities
+    and Treasury Inflation Protected Securities, usually known as TIPS.
+    Conventional fixed rate bonds promise dollar payments that do not
+    automatically rise with consumer prices. TIPS adjust their principal
+    with the Consumer Price Index, protecting investors from much of the
+    inflation risk.
+  </p>
+
+  <p>
+    TIPS make up only a small share of marketable US Treasury debt,
+    roughly 7%, depending on the date and the debt measure used.
+    Most marketable debt is therefore not directly indexed to inflation.
+  </p>
+
+  <p>
+    The maturity structure matters too. The average maturity of US
+    marketable debt is around six years. The government does not refinance
+    the entire stock overnight. Some securities mature soon, while others
+    lock in their existing terms for years. Unexpected inflation can
+    reduce the real value of outstanding fixed rate debt, but the benefit
+    arrives unevenly over time.
+  </p>
+
+  <p>
+    When old bonds mature, the Treasury must issue new ones. If investors
+    expect inflation to remain higher, they will demand higher nominal
+    yields to compensate. The government may gain from existing debt
+    while paying more to finance new debt.
+  </p>
+
+  <div class="note">
+    <strong>The limit:</strong> Inflation can reduce the real burden of
+    existing fixed rate debt, especially when it is unexpected. It cannot
+    reliably make future borrowing cheaper if markets anticipate the policy.
+  </div>
+
+  <h2>2. Who pays for the inflation?</h2>
+
+  <p>
+    Inflation redistributes purchasing power. The government can benefit
+    when the real value of its nominal liabilities falls, while investors
+    receive repayments that buy less than they expected.
+  </p>
+
+  <p>
+    Foreign investors held approximately 30% of publicly held US federal
+    debt in recent estimates. They include overseas private investors and
+    foreign governments. Unexpected US inflation can reduce the real
+    purchasing power of their dollar denominated Treasury holdings.
+    Their outcome in their own currency also depends on exchange rates.
+  </p>
+
+  <p>
+    Domestic investors and institutions also hold substantial Treasury
+    debt, including mutual funds, banks, pension funds, households and
+    the Federal Reserve. The effect differs across groups:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Households:</strong> People holding conventional bonds or
+      bond funds can lose purchasing power when inflation exceeds what
+      they expected. Cash savings can also lose real value.
+    </li>
+    <li>
+      <strong>Pension funds:</strong> Funds holding nominal bonds may see
+      the real value of those assets fall. Inflation can also increase
+      living costs and some future pension obligations.
+    </li>
+    <li>
+      <strong>Foreign holders:</strong> They may bear part of the loss on
+      nominal dollar claims, although currency changes can amplify or
+      offset it.
+    </li>
+    <li>
+      <strong>TIPS holders:</strong> Their principal adjusts with the
+      Consumer Price Index, providing greater protection against
+      inflation than conventional Treasuries.
+    </li>
+  </ul>
+
+  <p>
+    It would be misleading to say that foreign investors bear exactly
+    30% of the cost. The distribution depends on the securities affected,
+    their maturity, whether inflation was anticipated and who ultimately
+    owns the claims through pension and investment funds.
+  </p>
+
+  <h2>3. The Federal Reserve’s independence problem</h2>
+
+  <p>
+    The government may prefer lower borrowing costs and could benefit
+    in the short run from unexpected inflation. The Federal Reserve,
+    however, is responsible for pursuing price stability and maximum
+    employment. If political pressure pushes the Fed to keep rates too
+    low while inflation is rising, the two objectives can collide.
+  </p>
+
+  <p>
+    Economists call the more serious version of this conflict
+    <em>fiscal dominance</em>. Monetary policy becomes constrained by
+    government financing needs. Instead of setting interest rates mainly
+    to stabilise inflation and employment, the central bank faces pressure
+    to accommodate the budget.
+  </p>
+
+  <p>
+    Credibility is crucial. If investors believe the Fed will bring
+    inflation under control, long term inflation expectations can remain
+    relatively stable. If they begin to doubt that commitment, they may
+    demand a larger inflation premium on long term bonds. Yields rise,
+    and the government’s future interest bill grows.
+  </p>
+
+  <p>
+    That is the paradox: a government trying to reduce its debt burden
+    through inflation could undermine the confidence that allows it to
+    borrow at reasonable rates. Fiscal dominance is a risk, not an
+    automatic outcome, but it becomes more concerning when political
+    pressure weakens confidence in the central bank’s independence.
+  </p>
+
+  <h2>4. Is real growth a better route than inflation?</h2>
+
+  <p>
+    A more durable way to make debt manageable is for the economy to
+    grow faster than the real interest rate the government pays on its
+    debt. The key comparison is between <em>r</em>, the real interest
+    rate, and <em>g</em>, real GDP growth.
+  </p>
+
+  <div class="equation">
+    Change in debt to GDP ≈ (r − g) × existing debt ratio − primary surplus
+  </div>
+
+  <p>
+    The primary surplus is government revenue minus non interest spending,
+    expressed as a share of GDP. If growth exceeds the real interest rate,
+    existing debt tends to become smaller relative to the economy,
+    provided the primary deficit is not large enough to overwhelm
+    that advantage.
+  </p>
+
+  <p>
+    Consider a simplified example in which public debt begins at
+    100% of GDP and the primary budget is balanced:
+  </p>
+
+  <table class="data">
+    <thead>
+      <tr>
+        <th>Scenario</th>
+        <th>Real interest rate</th>
+        <th>Real growth</th>
+        <th>Approximate effect</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A: borrowing costs exceed growth</td>
+        <td>3%</td>
+        <td>2%</td>
+        <td>Debt ratio rises by about 1 percentage point</td>
+      </tr>
+      <tr>
+        <td>B: growth exceeds borrowing costs</td>
+        <td>2%</td>
+        <td>3%</td>
+        <td>Debt ratio falls by about 1 percentage point</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    This is an illustration, not a forecast. Actual debt dynamics also
+    depend on the primary budget balance, the effective interest rate
+    on existing debt and other economic adjustments.
+  </p>
+
+  <p>
+    Inflation can lift nominal GDP and reduce the ratio of nominal debt
+    to GDP, but its effect on existing debt is strongest when inflation
+    is unexpected. Productivity growth, a larger workforce and sound
+    public finances can improve debt sustainability without relying on
+    a surprise transfer from savers to the government.
+  </p>
+
+  <h2>5. Is a 5% ten year Treasury yield really high?</h2>
+
+  <p>
+    A nominal yield is not the same thing as an expected inflation rate.
+    It compensates investors for the time value of money, expected
+    inflation, real returns and the risks of holding a long term bond.
+  </p>
+
+  <p>
+    In mid October 2026, the US ten year Treasury yield was around 5.1%.
+    The ten year TIPS real yield was roughly 2.8%, implying a breakeven
+    inflation rate of about 2.3% to 2.4%.
+  </p>
+
+  <table class="data">
+    <thead>
+      <tr>
+        <th>Measure</th>
+        <th>Approximate rate</th>
+        <th>What it tells us</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nominal ten year Treasury</td>
+        <td>5.1%</td>
+        <td>The quoted yield on a conventional Treasury bond</td>
+      </tr>
+      <tr>
+        <td>Ten year TIPS real yield</td>
+        <td>2.8%</td>
+        <td>The inflation adjusted yield implied by TIPS pricing</td>
+      </tr>
+      <tr>
+        <td>Breakeven inflation</td>
+        <td>2.3% to 2.4%</td>
+        <td>The difference between nominal and TIPS yields</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    That breakeven rate suggests bond markets were not pricing in
+    runaway inflation over the next decade. It was closer to the
+    Federal Reserve’s 2% longer run target than to an expectation
+    of persistently extreme inflation.
+  </p>
+
+  <p>
+    However, breakeven inflation is not a pure forecast. It also reflects
+    inflation risk premiums and differences in the liquidity of
+    conventional Treasuries and TIPS. A 5% nominal yield can coexist
+    with moderate expected inflation if investors demand a high real
+    return or compensation for other risks.
+  </p>
+
+  <h2>The takeaway</h2>
+
+  <p>
+    Inflating away debt is possible in a narrow sense: unexpected
+    inflation reduces the real value of outstanding fixed rate government
+    liabilities. But it is a gamble because the gain depends on investors
+    being caught by surprise, while government borrowing needs continue
+    long after the initial inflation shock.
+  </p>
+
+  <p>
+    The costs are distributed across bondholders at home and abroad.
+    The strategy can also put pressure on the Federal Reserve’s
+    independence and risk pushing up the yields demanded on new debt.
+    By contrast, sustainable fiscal policy, productivity enhancing growth
+    and manageable real borrowing costs offer a more durable path to
+    reducing the debt burden.
+  </p>
+
+  <p>
+    The question is not simply whether the US can inflate away some debt.
+    It is whether it could do so without paying more later through higher
+    interest costs, weaker confidence or a less stable monetary system.
+  </p>
+
+  <h2>Key terms</h2>
+
+  <p>
+    <strong>TIPS:</strong> Treasury Inflation Protected Securities,
+    whose principal adjusts with the US Consumer Price Index.
+  </p>
+
+  <p>
+    <strong>Breakeven inflation:</strong> The difference between the
+    yield on a conventional Treasury bond and a comparable TIPS yield.
+    It is a market based measure of inflation compensation.
+  </p>
+
+  <p>
+    <strong>Fiscal dominance:</strong> A situation in which government
+    financing needs constrain the central bank’s ability to set
+    monetary policy.
+  </p>
+
+  <p>
+    <strong>Real interest rate:</strong> The interest rate after
+    accounting for inflation.
+  </p>
+
+  <p>
+    <strong>Primary balance:</strong> Government revenue minus spending
+    excluding interest payments on existing debt.
+  </p>
+
+  <h2>Sources and further reading</h2>
+
+  <ul class="sources">
+    <li>
+      <a href="https://www.npr.org/2026/10/20/nx-s1-6008133/the-gamble-of-trying-to-inflate-away-debt">
+        NPR and Planet Money: The gamble of trying to inflate away debt
+      </a>
+    </li>
+    <li>
+      <a href="https://www.cbo.gov/publication/62105">
+        Congressional Budget Office, The Budget and Economic Outlook:
+        2026 to 2036
+      </a>
+    </li>
+    <li>
+      <a href="https://www.everycrsreport.com/reports/RS22331.html">
+        Congressional Research Service, Foreign Holdings of Federal Debt
+      </a>
+    </li>
+    <li>
+      <a href="https://www.barrons.com/articles/bond-investors-inflation-cooling-consumers-446a63b4">
+        Barron’s, Bond Investors See Inflation Cooling
+      </a>
+    </li>
+    <li>
+      <a href="https://fiscaldata.treasury.gov/">
+        US Treasury Fiscal Data
+      </a>
+    </li>
+  </ul>
+
+  <div class="footer">
+    Written by Gautam Singh. Structure and layout refined with AI assistance.
+    Market figures are approximate and should be updated before publication.
+  </div>
+
+</main>
+</body>
+</html>
